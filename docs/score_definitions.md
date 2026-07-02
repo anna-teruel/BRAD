@@ -14,7 +14,7 @@ Three scores are currently available:
 
 ---
 
-# Relative Abundance
+## 1. Relative Abundance
 
 Relative abundance measures whether a brain region contains more or fewer detected objects than expected compared to the overall distribution of objects across the brain.
 
@@ -22,13 +22,13 @@ For each region, GeoBrain first computes the total number of detected objects ac
 
 ---
 
-## Normalization Methods
+### Normalization Methods
 
 Relative abundance can be computed using different normalization strategies depending on the goal of the analysis. GeoBrain currently supports two approaches:
 - **Within normalization**: regions are compared to other regions within the same dataset or cohort.
 - **Reference normalization**: regions are compared to a shared reference distribution, allowing more direct comparisons across cohorts.
 
-### Within Mode
+### 1.1 Within Mode
 
 In **within** mode, z-scores are computed using only the dataset currently being analyzed.
 
@@ -39,9 +39,8 @@ This means that:
 
 This mode is useful when the goal is to identify the most enriched regions within a single experimental group.
 
----
 
-### Reference Mode
+### 1.2 Reference Mode
 
 In **reference** mode, z-scores are computed using a shared reference distribution.
 
@@ -49,13 +48,13 @@ Instead of calculating the mean and standard deviation from the current dataset,
 
 This allows scores from multiple cohorts to be compared using the same normalization.
 
-#### Pooled Reference
+#### 1.2.1 Pooled Reference
 
 Reference statistics are computed using all available animals.
 
 This approach provides a common normalization across the entire dataset, with different groups.
 
-#### Group Reference
+#### 1.2.2 Group Reference
 
 Reference statistics are computed from a specific reference group, such as a control cohort.
 
@@ -68,19 +67,19 @@ This makes it easier to identify regions that are enriched or depleted relative 
 
 ---
 
-# Frequency
+## 2. Frequency
 
 Frequency measures how consistently a signal is observed across animals.
 
 For each region, GeoBrain calculates the fraction of animals with at least one detected object.
 
-## Formula
+### Formula
 
 ```text
 frequency = animals_with_objects / total_animals
 ```
 
-## Example
+### Example
 
 If 7 out of 10 animals contain at least one object in a region:
 
@@ -88,7 +87,7 @@ If 7 out of 10 animals contain at least one object in a region:
 frequency = 7 / 10 = 0.7
 ```
 
-## Interpretation
+### Interpretation
 
 * `1.0` → present in all animals.
 * `0.5` → present in half of the animals.
@@ -98,19 +97,19 @@ Frequency is independent of object count. A region with a single object in every
 
 ---
 
-# Density
+## Density
 
 Density measures the concentration of objects within a region.
 
 It is computed by dividing the total object count by the region area.
 
-## Formula
+### Formula
 
 ```text
 density = total_objects / region_area
 ```
 
-## Interpretation
+### Interpretation
 
 * Higher values indicate objects are concentrated within a region.
 * Lower values indicate objects are more sparsely distributed.
@@ -121,7 +120,7 @@ A large region and a small region may contain the same number of objects, but th
 
 ---
 
-# Choosing a Score
+## Choosing a Score
 
 The most appropriate score depends on the biological question being asked.
 
