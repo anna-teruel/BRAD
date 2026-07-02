@@ -19,6 +19,12 @@ source .venv/bin/activate      # Linux / macOS
 uv pip install geobrain
 ```
 
+Then launch the dashboard with:
+
+```
+geobrain
+```
+
 Or from source:
 
 ```
