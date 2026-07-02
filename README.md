@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="docs/logos/GeoBrain_logo1.png" width="75%">
+  <img src="https://raw.githubusercontent.com/anna-teruel/geobrain/main/docs/logos/GeoBrain_logo1.png" width="75%">
 </p>
 </div>
 
@@ -19,12 +19,6 @@ source .venv/bin/activate      # Linux / macOS
 uv pip install geobrain
 ```
 
-Then launch the dashboard with:
-
-```
-geobrain
-```
-
 Or from source:
 
 ```
@@ -33,6 +27,12 @@ cd geobrain
 uv venv
 .venv\Scripts\activate
 uv pip install .
+```
+
+Then launch the dashboard with:
+
+```
+geobrain
 ```
 
 ## Documentation
