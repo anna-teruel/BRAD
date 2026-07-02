@@ -10,7 +10,16 @@ GeoBrain is an interactive Python framework for atlas-based visualization of qua
 
 ## Installation
 
-To install:
+Requires Python 3.12+. Install from PyPI:
+
+```
+uv venv
+source .venv/bin/activate      # Linux / macOS
+.venv\Scripts\activate         # Windows
+uv pip install geobrain
+```
+
+Or from source:
 
 ```
 git clone https://github.com/anna-teruel/geobrain

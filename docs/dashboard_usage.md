@@ -13,15 +13,13 @@ regions once they're rendered, see
 After installing (see the [README](../README.md)):
 
 ```
-python -m geobrain
-# or, after install, the console script:
 geobrain
 ```
 
 A browser tab opens automatically at `http://127.0.0.1:8050`. Options:
 
 ```
-geobrain-app --host 0.0.0.0 --port 8060
+geobrain --host 0.0.0.0 --port 8060
 ```
 
 ---
