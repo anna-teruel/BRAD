@@ -19,6 +19,7 @@ Three scores are currently available:
 Relative abundance measures whether a brain region contains more or fewer detected objects than expected compared to the overall distribution of objects across the brain.
 
 For each region, GeoBrain first computes the total number of detected objects across animals. These region totals are then normalized and expressed as z-scores, allowing regions with unusually high or low object counts to be identified.
+
 ---
 
 ## Normalization Methods
