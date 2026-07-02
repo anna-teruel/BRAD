@@ -22,8 +22,10 @@ uv pip install .
 
 ## Documentation
 
-- [Using the dashboard](docs/dashboard_usage.md) - launching the app and the full workflow: load atlas, build slices, compute scores, view and export.
-- [Filtering & coloring rendered slices](docs/filtering_and_coloring.md) - how to color regions by score, filter and select which regions stay highlighted, and apply a flat color.
+- [Using the dashboard](docs/dashboard_usage.md) — launching the app and the full workflow: load atlas, build slices, compute scores, view and export.
+- [Filtering & coloring rendered slices](docs/filtering_and_coloring.md) — how to color regions by score, filter and select which regions stay highlighted, and apply a flat color.
+- [Understanding Scores](docs/score_definitions.md) — score definitions, normalization methods and interpretation.
+- [Tutorial](examples/demo_API.ipynb) — end-to-end example using the API.
 
 ## License
 
@@ -31,3 +33,9 @@ This project is licensed under the MIT License © 2026
 Anna Teruel-Sanchis and Konrad Danielewski.
 
 See the [LICENSE](LICENSE) file for details.
+
+## References
+
+[1] Yates, S. C., et al. (2019). *QUINT: Workflow for Quantification and Spatial Analysis of Features in Histological Images From Rodent Brain*. Frontiers in Neuroinformatics, 13, 75.
+
+[2] Wang, Q., et al. (2020). *The Allen Mouse Brain Common Coordinate Framework: A 3D Reference Atlas*. Cell, 181(4), 936–953.e20.
