@@ -13,6 +13,12 @@ from geobrain.build_geoJSON import (
 	scale_cartesian_to_lonlat,
 )
 from geobrain.choropleth_render import render_brain_slice
+from geobrain.delta import (
+	apply_significance_mask,
+	compute_delta,
+	symmetric_delta_limits,
+	test_region_differences,
+)
 from geobrain.coord_system import (
 	CCFConfig,
 	coord_mm_to_slice_index,
@@ -34,7 +40,7 @@ from geobrain.scores import (
 	save_scores,
 	score_table,
 )
-from geobrain.types import ReferenceMode, RelAbundanceMethod, ScoreName
+from geobrain.types import DeltaTest, ReferenceMode, RelAbundanceMethod, ScoreName
 
 __all__ = [
 	"ANNOTATION_URLS",
@@ -50,6 +56,10 @@ __all__ = [
 	"save_geojson",
 	"scale_cartesian_to_lonlat",
 	"render_brain_slice",
+	"apply_significance_mask",
+	"compute_delta",
+	"symmetric_delta_limits",
+	"test_region_differences",
 	"CCFConfig",
 	"coord_mm_to_slice_index",
 	"get_ccf_config",
@@ -69,6 +79,7 @@ __all__ = [
 	"relative_abundance",
 	"save_scores",
 	"score_table",
+	"DeltaTest",
 	"ReferenceMode",
 	"RelAbundanceMethod",
 	"ScoreName",

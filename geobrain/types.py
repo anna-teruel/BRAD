@@ -15,3 +15,8 @@ type ReferenceMode = Literal[
 	"pooled",
 	"group",
 ]
+
+type DeltaTest = Literal[
+	"mannwhitney",
+	"ttest",
+]
